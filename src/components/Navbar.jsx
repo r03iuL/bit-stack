@@ -38,28 +38,28 @@ const Navbar = ({ theme, setTheme }) => {
 
         <a
           href="#"
-          className="sm:hover:border-b"
+          className="sm:hover:border-b sm:hover:scale-105 transition duration-150"
           onClick={() => setSidebarOpen(false)}
         >
           Home
         </a>
         <a
           href="#services"
-          className="sm:hover:border-b"
+          className="sm:hover:border-b sm:hover:scale-105 transition duration-150"
           onClick={() => setSidebarOpen(false)}
         >
           Services
         </a>
         <a
           href="#our-work"
-          className="sm:hover:border-b"
+          className="sm:hover:border-b sm:hover:scale-105 transition duration-150"
           onClick={() => setSidebarOpen(false)}
         >
           Our Work
         </a>
         <a
           href="#contact-us"
-          className="sm:hover:border-b"
+          className="sm:hover:border-b sm:hover:scale-105 transition duration-150"
           onClick={() => setSidebarOpen(false)}
         >
           Contact Us
@@ -76,7 +76,7 @@ const Navbar = ({ theme, setTheme }) => {
         />
         <a
           href="#contact-us"
-          className=" text-sm max-sm:hidden flex items-center gap-2 bg-primary text-white px-6 py-2 rounded-full cursor-pointer hover:scale-103 transition-all"
+          className=" text-sm max-sm:hidden flex items-center gap-2 bg-primary text-white px-6 py-2 rounded-full cursor-pointer hover:scale-105 transition-all"
         >
           Connect <img src={assets.arrow_icon} width={14} alt="" />
         </a>

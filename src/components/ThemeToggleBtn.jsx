@@ -6,8 +6,9 @@ const ThemeToggleBtn = ({ theme, setTheme }) => {
     const prefersDarkMood = window.matchMedia(
       "(prefers-color-theme:dark)"
     ).matches;
-    setTheme(theme || prefersDarkMood ? "dark" : "light");
+    setTheme(theme || (prefersDarkMood ? "dark" : "light"));
   }, []);
+
   useEffect(() => {
     if (theme == "dark") {
       document.documentElement.classList.add("dark");
@@ -16,6 +17,7 @@ const ThemeToggleBtn = ({ theme, setTheme }) => {
     }
     localStorage.setItem("theme", theme);
   }, [theme]);
+
   return (
     <div>
       <button>
