@@ -1,5 +1,6 @@
 import React, { useRef, useState } from "react";
 
+// eslint-disable-next-line no-unused-vars
 const ServiceCard = ({ service, index }) => {
   const [position, setPosition] = useState({ x: 0, y: 0 });
   const [visible, setVisible] = useState(false);
